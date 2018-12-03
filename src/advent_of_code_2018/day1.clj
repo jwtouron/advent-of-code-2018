@@ -1,13 +1,10 @@
 (ns advent-of-code-2018.day1
-  (require [clojure.java.io :as io])
+  (require [advent-of-code-2018.utils :refer [get-input-lines]])
   (import [java.lang.math]))
 
 (def day1-input
   (->> "day1.txt"
-       io/resource
-       io/file
-       slurp
-       clojure.string/split-lines
+       get-input-lines
        (map #(Long/parseLong %))))
 
 (def part1-solution
