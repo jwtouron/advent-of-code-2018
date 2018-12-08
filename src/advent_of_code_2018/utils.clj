@@ -7,3 +7,6 @@
       io/file
       slurp
       clojure.string/split-lines))
+
+(defn ->long [x]
+  (Long/parseLong x))
