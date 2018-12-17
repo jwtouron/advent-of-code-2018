@@ -1,5 +1,5 @@
 (ns advent-of-code-2018.utils
-  (require [clojure.java.io :as io]))
+  (:require [clojure.java.io :as io]))
 
 (defn get-input-lines [file]
   (-> file
